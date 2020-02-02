@@ -1,0 +1,83 @@
+* {
+    font-family: Roboto-light, sans-serif;
+}
+
+h1 {
+    font-size: .7cm;
+}
+
+h2 {
+    font-size: .5cm;
+}
+
+h3 {
+    font-size: .4cm;
+    border-bottom: 2px solid red;
+    clear: both;
+}
+
+h4 {
+    font-size: .35cm;
+}
+
+h1, h2, h3, h4 {
+    font-family: Russo One, sans-serif;
+    color: goldenrod;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+hr {
+    visibility: hidden;
+}
+
+.btn {
+    background-color: goldenrod;
+    color: #ffffff;
+}
+
+.img-circle {
+    border-radius: 10px;
+}
+
+/* CLASSES */
+.classPortrait {
+    min-height: 350px;
+    min-width: 350px;
+}
+
+.classDetail_variantHealth {
+    max-width: 500px;
+}
+.classDetail_funds {
+    background: #c9d6db;
+}
+
+.block {
+    padding: 15px 10px;
+    margin: 15px;
+    background-color: #bdc8cc;
+    border-top: .2em solid #0d99cc;
+    border-bottom: .2em solid #0d99cc;
+    border-left: 0;
+    border-right: 0;
+    -webkit-box-shadow:
+    0 0 1.5em rgba(13,153,204,.5);
+    box-shadow:
+    0 0 1.5em rgba(13,153,204,.5);
+    overflow-x: auto;
+}
+
+.table {
+    border-collapse: collapse;
+    min-width: 200px;
+    margin-bottom: 15px;
+}
+
+.levelTable {
+    width: 100%;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #c9d6db;
+}
