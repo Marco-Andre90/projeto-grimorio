@@ -1,4 +1,4 @@
-# g-g
+# projeto-g
 
 ## Project setup
 ```
