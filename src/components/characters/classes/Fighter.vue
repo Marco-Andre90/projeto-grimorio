@@ -275,10 +275,213 @@
             </div>
             <br>
             <h3>Estilo de Luta</h3>
-            <p>Começando no 1º nível, você adota um estilo particular de luta. Escolha uma das opções de
-                Estilo de Luta, detalhados no Capítulo 6. Você não pode escolher uma mesma opção novamente, mesmo que possa escolher depois.
-            </p>
-            <h3>Retomar Fôlego</h3>
+            <template>
+                <v-expansion-panels hover>
+                    <v-expansion-panel>
+                        <v-expansion-panel-header><div>
+                            <p>Começando no 1º nível, você adota um estilo particular de luta. Clique nesta caixa e escolha uma das opções de
+                            Estilo de Luta. Você não pode escolher uma mesma opção novamente.
+                            </p>
+                        </div>
+                        </v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            <v-container fluid>
+                                <v-row class="justify-center">
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-container>
+                                            <v-card-text>
+                                                <h4 class="pb-2">ARREMESSAR</h4>
+                                                <div>
+                                                    <p>Você sabe várias técnicas para armas de arremesso. Quando estiver utilizando armas com a propriedade “arremesso” ao qual você seja proficiente, você ganha os seguintes benefícios:
+                                                    </p>
+                                                    <ul>
+                                                        <li>Você ganha bônus +1 para ataques corpo-a-corpo e a distância.</li>
+                                                        <li>Sempre que você fizer um ataque a distância com uma arma de arremesso, você pode imediatamente sacar outra arma como parte do ataque.</li>
+                                                    </ul>
+                                                </div>
+                                            </v-card-text>
+                                            </v-container>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-container>
+                                            <v-card-text>
+                                                <h4 class="pb-2">BRIGA DE RUA</h4>
+                                                <div>
+                                                    <p>Você é habilidoso em usar seu peso para te pôr em vantagem. Enquanto você não estiver utilizando um escudo médio ou pesado, você ganha os seguintes benefícios:
+                                                    </p>
+                                                    <ul>
+                                                        <li>Você é proficiente com armas improvisadas.
+                                                        </li>
+                                                        <li>Seus golpes desarmados usam d4 para dano.
+                                                        </li>
+                                                        <li>Quando você atingir uma criatura com um golpe desarmado ou uma arma improvisada no seu turno, você pode usar uma ação bônus para tentar agarrar o alvo.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </v-card-text>
+                                            </v-container>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-container>
+                                            <v-card-text>
+                                                <h4 class="pb-2">COMBATE COM ARMAS GRANDES</h4>
+                                                <div>
+                                                    <p>Você sabe utilizar o peso de uma arma para lhe pôr em vantagem. Quando você rolar um 1 ou um 2 num dado de dano de um ataque com arma corpo-a-corpo que você esteja empunhando com duas mãos (e que você seja proficiente), você pode rolar o dado novamente e usar a nova rolagem, mesmo que resulte em 1 ou 2. A arma deve ter a propriedade duas mãos ou versátil para ganhar esse benefício.
+                                                    </p>
+                                                </div>
+                                            </v-card-text>
+                                            </v-container>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-card-text>
+                                                <h4 class="pb-2">COMBATE COM DUAS ARMAS</h4>
+                                                <div>
+                                                    <p>Você consegue lutar com uma arma e cada mão. Quando estiver segurando uma arma em cada mão, ou uma arma com a propriedade “dupla”, e que você seja proficiente, você ganha os seguintes benefícios:
+                                                    </p>
+                                                    <ul>
+                                                        <li>Quando engajar em Combate com Duas Armas, você pode adicionar o seu modificador de habilidade para o dano das suas armas.
+                                                        </li>
+                                                        <li>Quando você fizer um ataque de oportunidade, você pode atacar com ambas as suas armas.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </v-card-text>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-card-text>
+                                                <h4 class="pb-2">COMBATE VERSÁTIL</h4>
+                                                <div>
+                                                    <p>Você sabe usar armas de diferentes maneiras. Enquanto você estiver usando uma arma corpo-a-corpo com a propriedade versátil, ao qual você é proficiente, e mais nenhuma outra arma, você ganha os seguintes benefícios
+                                                    </p>
+                                                    <ul>
+                                                        <li>Você ganha +1 bônus para rolagens de ataque segurando a arma com uma mão.
+                                                        </li>
+                                                        <li>Você ganha +1 bônus para rolagens de ataque segurando a arma com as duas mãos.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </v-card-text>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-card-text>
+                                                <h4 class="pb-2">DEFESA</h4>
+                                                <div>
+                                                    <p>Você é habilidoso na arte de se defender. Enquanto estiver usando uma armadura ao qual você é proficiente, você ganha os seguintes benefícios:
+                                                    </p>
+                                                    <ul>
+                                                        <li>Você ganha +1 de bônus na CA
+                                                        </li>
+                                                        <li>Você tem vantagem em testes de habilidade e testes de resistência que o forcem a se mover.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </v-card-text>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-card-text>
+                                                <h4 class="pb-2">DEFENDER COM ESCUDO</h4>
+                                                <div>
+                                                    <p>Você se especializa em proteger a si mesmo e seus aliados com um escudo. Enquanto estiver utilizando um escudo médio ou pesado ao qual você seja proficiente, você ganha os seguintes benefícios:
+                                                    </p>
+                                                    <ul>
+                                                        <li>Quando uma criatura que você pode ver ataca um alvo que não seja você e esteja a 5 pés (1,5m) de você, você pode usar sua reação para impor desvantagem na rolagem de ataque.
+                                                        </li>
+                                                        <li>Se estiver usando escudo pesado, você não precisa mais usar uma arma com a propriedade “leve” na outra mão.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </v-card-text>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-card-text>
+                                                <h4 class="pb-2">DUELISTA</h4>
+                                                <div>
+                                                    <p>Você é habilidoso na arte de lutar apenas com uma arma corpo-a-corpo. Quando você empunhar uma arma de ataque corpo-a-corpo em uma mão (ao qual você é proficiente) e nenhuma outra arma, você ganha +2 de bônus nas jogadas de dano com essa arma.
+                                                    </p>
+                                                </div>
+                                            </v-card-text>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-card-text>
+                                                <h4 class="pb-2">EQUILIBRIUM</h4>
+                                                <div>
+                                                    <p>Você é capaz de lutar bem mesmo com pouca ou nenhuma proteção. Quando não estiver vestindo armadura e não estiver usando escudo médio ou pesado, você ganha os seguintes benefícios:
+                                                    </p>
+                                                    <ul>
+                                                        <li>Você ganha +1 bônus de CA.
+                                                        </li>
+                                                        <li>Você ganha +1 bônus nas rolagens de ataque
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </v-card-text>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-card-text>
+                                                <h4 class="pb-2">SENTINELA</h4>
+                                                <div>
+                                                    <p>Você conhece técnicas que aproveitam aberturas na guarda do oponente. Enquanto estiver usando uma arma corpo-a-corpo ao qual você é proficiente, você pode utilizar sua ação bônus para entrar em postura defensiva até o início do seu próximo turno. Enquanto estiver na sua postura defensiva, você pode fazer um número de ataques de oportunidade igual o número do seu bônus de proficiência sem gastar reação, e você pode usar sua reação para fazer um ataque corpo-a-corpo contra uma criatura que se move a até 5 pés (1,5m) do seu alcance.
+                                                    </p>
+                                                </div>
+                                            </v-card-text>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-card-text>
+                                                <h4 class="pb-2">TIRO A CURTA DIST NCIA</h4>
+                                                <div>
+                                                    <p>Você tem habilidade em chegar perto com armas blaster.  Enquanto você estiver usando uma arma blaster com a qual você é proficiente, você ganha os seguintes benefícios:
+                                                    </p>
+                                                    <ul>
+                                                        <li>Quando fizer um ataque com arma a distância enquanto estiver a 5 pés (1,5m) de uma criatura hostil, você não tem desvantagem na rolagem de ataque.
+                                                        </li>
+                                                        <li>Suas armas de ataque a distância ignoram meia cobertura contra alvos a 15 pés (4,5m) de você.
+                                                        </li>
+                                                        <li>Você ganha bônus +1 para rolagens de ataque com armas blaster.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </v-card-text>
+                                        </v-card>
+                                    </v-col>
+                                    <v-col xs="12" md="6" lg="4">
+                                        <v-card style="height:100%">
+                                            <v-card-text>
+                                                <h4 class="pb-2">TIRO CERTEIRO</h4>
+                                                <div>
+                                                    <p>Você se especializa em armas blaster e pode fazer tiros que outros acham difíceis ou até impossível. Enquanto estiver usando uma arma blaster ao qual você seja proficiente, você ganha bônus +2 para ataques com arma a distância.
+                                                    </p>
+                                                </div>
+                                            </v-card-text>
+                                        </v-card>
+                                    </v-col>
+                                </v-row>
+                            </v-container>
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                </v-expansion-panels>
+            </template>
+            <h3 class="pt-3">Retomar Fôlego</h3>
             <p>Você possui uma reserva de estamina e pode usá-la para
                 proteger a si mesmo contra danos. No seu turno, você
                 pode usar uma ação bônus para recuperar pontos de vida
