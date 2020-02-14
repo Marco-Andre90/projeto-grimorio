@@ -1,7 +1,7 @@
 <template>
-    <v-container fluid>
+    <v-container id="classContainer" fluid>
         <div exact>
-            <div>
+            <div class="mt-2 mb-2">
                 <v-btn text to="/characters/classes">
 				<v-icon class="mr-2">fa fa-angle-left</v-icon>
 				CLASSES
@@ -205,9 +205,12 @@
                     </tbody>
                 </table>
             </div>
-            <span class="mt-2 pr-2 classPortrait" style="float:right">
-                <v-img class="img-circle" src="@/components/assets/fighter/fighter_02.jpg" height="650" width="360" float="right" />
+
+            <!-- CARACTERÍSTICAS DE CLASSE -->
+            <span class="pt-2 classPortrait" style="float:right">
+                <v-img class="img-circle" src="@/components/assets/fighter/fighter_02.jpg" height="650" width="360" />
             </span>
+            <div>
             <h2 class="pt-3">Características de Classe</h2>
             <p>Como um guerreiro, você ganha as seguintes características de classe.</p>
             <h4>Pontos de Vida</h4>
@@ -274,6 +277,9 @@
                 </div>
             </div>
             <br>
+            </div>
+
+            <!-- HABILIDADES DE CLASSE -->
             <h3>Estilo de Luta</h3>
             <template>
                 <v-expansion-panels hover>
@@ -448,7 +454,7 @@
                                     <v-col xs="12" md="6" lg="4">
                                         <v-card style="height:100%">
                                             <v-card-text>
-                                                <h4 class="pb-2">TIRO A CURTA DIST NCIA</h4>
+                                                <h4 class="pb-2">TIRO A CURTA DISTÂNCIA</h4>
                                                 <div>
                                                     <p>Você tem habilidade em chegar perto com armas blaster.  Enquanto você estiver usando uma arma blaster com a qual você é proficiente, você ganha os seguintes benefícios:
                                                     </p>

@@ -41,6 +41,10 @@ hr {
 }
 
 /* CLASSES */
+#classContainer {
+    max-width: 90%;
+}
+
 .classPortrait {
     min-height: 350px;
     min-width: 350px;
